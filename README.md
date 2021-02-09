@@ -13,3 +13,8 @@ docker build . -t <user>/<repo>:<tag>
 | USER | ```sormas_user``` |
 | PASSWORD | ```<your password>``` |
 | RETRY | ```5``` in seconds |
+
+## Install
+```bash
+curl https://raw.githubusercontent.com/nk-designz/sormas-exporter/main/install.sh | sudo sh
+```
