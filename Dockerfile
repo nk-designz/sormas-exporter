@@ -10,5 +10,6 @@ ENV HOST postgres
 ENV PORT 5432
 ENV USER sormas_user
 ENV PASSWORD password
-ENV RETRY 5 
-CMD /sormas_exporter -host=${HOST} -port=${PORT} -user=${USER} -password=${PASSWORD} -retry=${RETRY}
+ENV DELAY 30
+RUN mkdir /var/lib/node-exporter
+CMD /sormas_exporter -host=${HOST} -port=${PORT} -user=${USER} -password=${PASSWORD} -delay=${DELAY}
