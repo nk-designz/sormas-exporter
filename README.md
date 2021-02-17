@@ -12,7 +12,7 @@ docker build . -t <user>/<repo>:<tag>
 | PORT | ```5432``` |
 | USER | ```sormas_user``` |
 | PASSWORD | ```<your password>``` |
-| RETRY | ```5``` in seconds |
+| DELAY | ```30``` in seconds |
 
 ## Install
 ```bash
